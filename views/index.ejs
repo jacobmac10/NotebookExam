@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <% include partials/head %>
+</head>
+
+<body class="container">
+
+    <% include partials/header %>
+        <% tareas.forEach(registro => { %>
+            <div class="panel panel-primary">
+                
+                    <%= registro.title %>
+                    <hr>
+                     <%= registro.body %>  
+                    
+            </div>
+    
+             
+            <a href="/borrar/<%= tareas.id %>">Borrar</a>
+            <% }) %>
+            
+
+
+
+
+</body>
+
+</html>

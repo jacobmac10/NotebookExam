@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+    <% include partials/head %> 
+</head>
+<body class="container">
+    <% include partials/header %> 
+    <div class="col-xs-8 col-xs-offset-2">
+        <h2 class="text-center">Escribe, publica, comenta</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="title">Titulo</label>
+                <input 
+                type="text" 
+                name="title" 
+                id="title" 
+                class="form-control"
+                placeholder="ingrese el titulo de la historia" 
+                required>
+
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="body">Cuentanos tu historia</label>
+                <textarea 
+                class="form-control"
+                id="body"
+                name="body"
+                rows= "6"
+                cols="70"
+                required,
+                >
+                </textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="enviar" class="btn btn-primary">
+
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+</html>
